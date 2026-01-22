@@ -1,37 +1,14 @@
 {
   "name": "Naimur Rahman",
   "bio": "Statistics graduate and data enthusiast passionate about research, analytics, and transforming data into actionable insights.",
-
   "profilePhoto": "https://github.com/NaimurRah1/Naimur-Rahman.github.oi/blob/main/NaimurRahman.png",
-
   "socials": [
-    {
-      "name": "Facebook",
-      "icon": "fab fa-facebook",
-      "link": "https://facebook.com/naimurrahman.mehrab"
-    },
-    {
-      "name": "YouTube",
-      "icon": "fab fa-youtube",
-      "link": "https://youtube.com"
-    },
-    {
-      "name": "LinkedIn",
-      "icon": "fab fa-linkedin",
-      "link": "https://linkedin.com/in/naimurrahman33"
-    },
-    {
-      "name": "GitHub",
-      "icon": "fab fa-github",
-      "link": "https://github.com/NaimurRah1"
-    },
-    {
-      "name": "Instagram",
-      "icon": "fab fa-instagram",
-      "link": "https://instagram.com/naimurrahman853"
-    }
+    {"name": "Facebook", "icon": "fab fa-facebook", "link": "https://facebook.com/naimurrahman.mehrab"},
+    {"name": "YouTube", "icon": "fab fa-youtube", "link": "https://youtube.com"},
+    {"name": "LinkedIn", "icon": "fab fa-linkedin", "link": "https://linkedin.com/in/naimurrahman33"},
+    {"name": "GitHub", "icon": "fab fa-github", "link": "https://github.com/NaimurRah1"},
+    {"name": "Instagram", "icon": "fab fa-instagram", "link": "https://instagram.com/naimurrahman853"}
   ],
-
   "education": [
     {
       "institution": "Jagannath University",
@@ -39,36 +16,30 @@
       "gpa": "3.79 / 4.00",
       "year": "2024",
       "logo": "jnu.png",
-      "subjects": [
-        "Probability & Statistics",
-        "Regression Analysis",
-        "Econometrics",
-        "Sampling Techniques",
-        "Multivariate Analysis",
-        "Time Seirse Analysis",
-        "Biostatistics"
-      ]
+      "subjects": ["Probability & Statistics","Regression Analysis","Econometrics","Sampling Techniques","Multivariate Analysis","Time Seirse Analysis","Biostatistics"]
     }
   ],
-
   "courses": [
     {
       "title": "Google Data Analytics Certificate",
       "institution": "Coursera",
-      "year": "2023"
+      "year": "2023",
+      "desc": "A comprehensive program covering data cleaning, visualization, and analysis using SQL and spreadsheets."
     },
     {
       "title": "SQL for Data Science",
       "institution": "Udemy",
-      "year": "2024"
+      "year": "2024",
+      "desc": "Learn SQL queries, joins, aggregations, and data extraction for analytics."
     }
   ],
-
   "projects": [
     {
       "title": "The association between breastfeeding practices and child nutrition status in Bangladesh",
       "desc": "Research on child nutrition outcomes using BDHS data.",
-      "image": "project1.png"
+      "image": "project1.png",
+      "category": "Research",
+      "link": "https://example.com/project1"
     }
   ]
 }
