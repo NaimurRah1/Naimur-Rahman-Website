@@ -137,6 +137,12 @@ h2{
   transition: background .3s, color .3s;
 }
 
+.course-card img{
+  max-width:100px;
+  margin-top:10px;
+  border-radius:8px;
+}
+
 /* PROJECTS */
 .projects-grid{
   display:grid;
@@ -159,14 +165,14 @@ h2{
   border-radius:14px;
 }
 
-/* NAME BLINK */
-@keyframes blink{
-  0%,50%,100%{opacity:1;}
-  25%,75%{opacity:0;}
+/* NAME TYPEWRITER/BOUND */
+@keyframes bound{
+  0%,100%{ transform: translateY(0);}
+  50%{ transform: translateY(-10px);}
 }
-.blink-letter{
+.bound-letter{
   display:inline-block;
-  animation: blink 1.2s infinite;
+  animation: bound 0.6s ease-in-out infinite;
 }
 
 /* SECTION POPUP */
@@ -186,3 +192,24 @@ h2{
   z-index: 1000;
 }
 .section-popup.show { opacity: 1; }
+
+/* SKILLS */
+.skill-card{
+  margin-bottom:20px;
+}
+.skill-card p{
+  margin:0 0 5px 0;
+}
+.skill-bar{
+  background:rgba(255,255,255,0.2);
+  height:12px;
+  border-radius:8px;
+  overflow:hidden;
+}
+.skill-level{
+  height:12px;
+  border-radius:8px;
+  background:var(--accent);
+  width:0;
+  transition: width 1s ease-in-out;
+}
