@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <button id="themeToggle">🌙</button>
+</nav>
+
+<section class="hero" id="about">
+    <div class="hero-card">
+        <img id="photo">
+        <h1 id="name"></h1>
+        <p id="bio"></p>
+        <div class="socials" id="socials"></div>
+    </div>
+</section>
+
+<section class="section" id="skills">
+    <h2>Skills</h2>
+    <div id="skillsBars"></div>
+</section>
+
+<section class="section" id="education">
+    <h2>Education</h2>
+    <div class="edu-grid" id="educationGrid"></div>
+</section>
+
+<section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div id="filters">
+        <button onclick="filterProjects('All')">All</button>
+        <button onclick="filterProjects('Research')">Research</button>
+        <button onclick="filterProjects('SQL')">SQL</button>
+        <button onclick="filterProjects('ML')">ML</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

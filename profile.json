@@ -1,0 +1,33 @@
+{
+  "name": "NAIMUR RAHMAN",
+  "bio": "Statistics graduate & data enthusiast.",
+  "profilePhoto": "NaimurRahman.png",
+
+  "skills": [
+    {"name":"Python","level":90},
+    {"name":"SQL","level":85},
+    {"name":"R","level":80}
+  ],
+
+  "projects": [
+    {
+      "title": "Breastfeeding Study",
+      "desc": "Child nutrition research",
+      "category": "Research",
+      "image": "project.jpg"
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "BSc in Statistics",
+      "institution": "Jagannath University",
+      "year": "2024"
+    }
+  ],
+
+  "socials": {
+    "GitHub": "https://github.com/NaimurRah1",
+    "LinkedIn": "https://linkedin.com/in/naimur-rahman"
+  }
+}
