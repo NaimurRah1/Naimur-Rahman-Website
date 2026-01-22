@@ -15,15 +15,15 @@
       "degree": "BSc in Statistics",
       "gpa": "3.79 / 4.00",
       "year": "2024",
-      "logo": "jnu.png",
-      "subjects": ["Probability & Statistics","Regression Analysis","Econometrics","Sampling Techniques","Multivariate Analysis","Time Seirse Analysis","Biostatistics"]
+      "logo": "https://jnu.ac.bd/assets/new/images/logo.png",
+      "subjects": ["Probability & Statistics","Regression Analysis","Econometrics","Sampling Techniques","Multivariate Analysis","Time Series Analysis","Biostatistics"]
     },
      {
       "institution": "Jagannath University",
       "degree": "MSc in Statistics",
       "gpa": "3.80 / 4.00",
       "year": "2025",
-      "logo": "jnu.png",
+      "logo": "https://jnu.ac.bd/assets/new/images/logo.png",
       "subjects": ["Advance Multivariate Analysis","Advanced Sampling Techniques","Data Mining","Advanced Sample Design","Thesis"]
     },
      {
