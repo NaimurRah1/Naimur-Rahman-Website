@@ -15,7 +15,7 @@
       "degree": "BSc in Statistics",
       "gpa": "3.79 / 4.00",
       "year": "2024",
-      "logo": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman.github.oi/main/jnu_logo.png",
+      "logo": "https://github.com/NaimurRah1/Naimur-Rahman-Website/blob/main/Jagannath%20University.png",
       "subjects": ["Probability & Statistics","Regression Analysis","Econometrics","Sampling Techniques","Multivariate Analysis","Time Series Analysis","Biostatistics"]
     },
     {
@@ -23,7 +23,7 @@
       "degree": "MSc in Statistics",
       "gpa": "3.80 / 4.00",
       "year": "2025",
-      "logo": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman.github.oi/main/jnu_logo.png",
+      "logo": "https://github.com/NaimurRah1/Naimur-Rahman-Website/blob/main/Jagannath%20University.png",
       "subjects": ["Advance Multivariate Analysis","Advanced Sampling Techniques","Data Mining","Advanced Sample Design","Thesis"]
     },
     {
@@ -72,3 +72,4 @@
     {"name":"Data Visualization","level":88}
   ]
 }
+
