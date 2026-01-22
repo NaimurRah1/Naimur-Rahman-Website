@@ -7,6 +7,13 @@ fetch('profile.json')
   document.getElementById('name').textContent=d.name;
   document.getElementById('bio').textContent=d.bio;
 
+  // NAME BLINK LETTERS
+  const nameEl = document.getElementById('name');
+  const letters = nameEl.textContent.split('');
+  nameEl.innerHTML = letters.map((l,i)=>
+    `<span class="blink-letter" style="animation-delay:${i*0.15}s">${l}</span>`
+  ).join('');
+
   // SOCIAL ICONS
   const socials=document.getElementById('socials');
   for(let s of d.socials){
@@ -44,18 +51,57 @@ fetch('profile.json')
         <h4>${c.title}</h4>
         <p>${c.institution}</p>
         <small>${c.year}</small>
+        ${c.desc ? `<p>${c.desc}</p>` : ''}
       </div>`;
   });
 
-  // PROJECTS
+  // PROJECT FILTERS
   const pr=document.getElementById('projectsGrid');
   d.projects.forEach(p=>{
     pr.innerHTML+=`
-      <div class="project">
+      <div class="project" data-cat="${p.category}" onclick="window.open('${p.link}','_blank')">
         <img src="${p.image}">
         <h4>${p.title}</h4>
         <p>${p.desc}</p>
       </div>`;
   });
 
+});
+
+// THEME TOGGLE
+const themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', () => {
+  if(document.documentElement.getAttribute('data-theme') === 'light'){
+    document.documentElement.removeAttribute('data-theme');
+    themeBtn.textContent = '🌙';
+  } else {
+    document.documentElement.setAttribute('data-theme','light');
+    themeBtn.textContent = '🌑';
+  }
+});
+
+// SECTION POPUP
+const popup = document.getElementById('sectionPopup');
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    target.scrollIntoView({behavior:'smooth'});
+    popup.textContent = link.textContent;
+    popup.classList.add('show');
+    setTimeout(()=> popup.classList.remove('show'), 1200);
+  });
+});
+
+// PROJECT FILTER BUTTONS
+const projectFilters = document.getElementById('projectFilters');
+projectFilters.addEventListener('click', e=>{
+  if(e.target.tagName==='BUTTON'){
+    const cat = e.target.getAttribute('data-cat');
+    const projects = document.querySelectorAll('.project');
+    projects.forEach(p=>{
+      if(cat==='All' || p.dataset.cat===cat) p.style.display='block';
+      else p.style.display='none';
+    });
+  }
 });
