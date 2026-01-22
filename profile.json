@@ -31,7 +31,7 @@
       "degree": "Higher Secondary Certificate (HSC)",
       "gpa": "4.50 / 5.00",
       "year": "2018",
-      "logo": "https://github.com/NaimurRah1/Naimur-Rahman-Website/blob/main/Hajiganj%20degree%20college.jpg"
+      "logo": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman-Website/main/Hajiganj%20degree%20college.jpg"
     },
     {
       "institution": "Nizmehar Model Pilot High School",
@@ -72,6 +72,7 @@
     {"name":"Data Visualization","level":88}
   ]
 }
+
 
 
 
