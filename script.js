@@ -2,77 +2,60 @@ fetch('profile.json')
 .then(res=>res.json())
 .then(d=>{
 
-    document.getElementById('photo').src=d.profilePhoto;
+  // BASIC INFO
+  document.getElementById('photo').src=d.profilePhoto;
+  document.getElementById('name').textContent=d.name;
+  document.getElementById('bio').textContent=d.bio;
 
-    // Animated Name
-    const nameEl=document.getElementById('name');
-    d.name.split('').forEach((c,i)=>{
-        const s=document.createElement('span');
-        s.textContent=c;
-        s.style.opacity=0;
-        s.style.animation=`pop .5s forwards ${i*0.05}s`;
-        nameEl.appendChild(s);
-    });
+  // SOCIAL ICONS
+  const socials=document.getElementById('socials');
+  for(let s of d.socials){
+    socials.innerHTML+=`
+      <a href="${s.link}" target="_blank" title="${s.name}">
+        <i class="${s.icon}"></i>
+      </a>`;
+  }
 
-    document.getElementById('bio').textContent=d.bio;
+  // EDUCATION
+  const edu=document.getElementById('educationList');
+  d.education.forEach(e=>{
+    edu.innerHTML+=`
+      <div class="edu-card">
+        <img src="${e.logo}">
+        <div class="edu-left">
+          <h4>${e.institution}</h4>
+          <p>${e.degree} (${e.gpa})</p>
+          <small>${e.year}</small>
+        </div>
+        <div class="edu-right">
+          <strong>Subjects</strong>
+          <ul>
+            ${e.subjects.map(s=>`<li>${s}</li>`).join('')}
+          </ul>
+        </div>
+      </div>`;
+  });
 
-    // Socials
-    const soc=document.getElementById('socials');
-    for(let k in d.socials){
-        const a=document.createElement('a');
-        a.href=d.socials[k];
-        a.textContent=k;
-        a.target="_blank";
-        soc.appendChild(a);
-    }
+  // COURSES
+  const course=document.getElementById('courseList');
+  d.courses.forEach(c=>{
+    course.innerHTML+=`
+      <div class="course-card">
+        <h4>${c.title}</h4>
+        <p>${c.institution}</p>
+        <small>${c.year}</small>
+      </div>`;
+  });
 
-    // Skills
-    const sk=document.getElementById('skillsBars');
-    d.skills.forEach(s=>{
-        sk.innerHTML+=`
-        <div class="skills-bar">
-            <small>${s.name}</small>
-            <div class="progress">
-                <div style="width:${s.level}%"></div>
-            </div>
-        </div>`;
-    });
+  // PROJECTS
+  const pr=document.getElementById('projectsGrid');
+  d.projects.forEach(p=>{
+    pr.innerHTML+=`
+      <div class="project">
+        <img src="${p.image}">
+        <h4>${p.title}</h4>
+        <p>${p.desc}</p>
+      </div>`;
+  });
 
-    // Education
-    const ed=document.getElementById('educationGrid');
-    d.education.forEach(e=>{
-        ed.innerHTML+=`
-        <div class="edu-card">
-            <h4>${e.degree}</h4>
-            <p>${e.institution}</p>
-            <small>${e.year}</small>
-        </div>`;
-    });
-
-    // Projects
-    const pr=document.getElementById('projectsGrid');
-    d.projects.forEach(p=>{
-        pr.innerHTML+=`
-        <div class="project" data-cat="${p.category}">
-            <img src="${p.image}">
-            <h4>${p.title}</h4>
-            <p>${p.desc}</p>
-        </div>`;
-    });
 });
-
-// Filter
-function filterProjects(cat){
-    document.querySelectorAll('.project').forEach(p=>{
-        p.style.display=(cat==='All'||p.dataset.cat===cat)?'block':'none';
-    });
-}
-
-// Theme
-const toggle=document.getElementById('themeToggle');
-if(localStorage.theme==='light') document.body.classList.add('light');
-
-toggle.onclick=()=>{
-    document.body.classList.toggle('light');
-    localStorage.theme=document.body.classList.contains('light')?'light':'dark';
-};
