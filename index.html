@@ -3,52 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+<title>Naimur Rahman | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <button id="themeToggle">🌙</button>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#courses">Courses</a>
+  <a href="#projects">Projects</a>
 </nav>
 
+<!-- ABOUT -->
 <section class="hero" id="about">
-    <div class="hero-card">
-        <img id="photo">
-        <h1 id="name"></h1>
-        <p id="bio"></p>
-        <div class="socials" id="socials"></div>
-    </div>
+  <div class="hero-card">
+    <img id="photo">
+    <h1 id="name"></h1>
+    <p id="bio"></p>
+
+    <div class="social-icons" id="socials"></div>
+  </div>
 </section>
 
-<section class="section" id="skills">
-    <h2>Skills</h2>
-    <div id="skillsBars"></div>
-</section>
-
+<!-- EDUCATION -->
 <section class="section" id="education">
-    <h2>Education</h2>
-    <div class="edu-grid" id="educationGrid"></div>
+  <h2>Education</h2>
+  <div id="educationList"></div>
 </section>
 
+<!-- COURSES & CERTIFICATIONS -->
+<section class="section" id="courses">
+  <h2>Courses & Certifications</h2>
+  <div id="courseList"></div>
+</section>
+
+<!-- PROJECTS -->
 <section class="section" id="projects">
-    <h2>Projects</h2>
-
-    <div id="filters">
-        <button onclick="filterProjects('All')">All</button>
-        <button onclick="filterProjects('Research')">Research</button>
-        <button onclick="filterProjects('SQL')">SQL</button>
-        <button onclick="filterProjects('ML')">ML</button>
-    </div>
-
-    <div class="projects-grid" id="projectsGrid"></div>
+  <h2>Projects</h2>
+  <div class="projects-grid" id="projectsGrid"></div>
 </section>
 
 <script src="script.js"></script>
