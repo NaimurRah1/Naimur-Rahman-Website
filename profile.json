@@ -67,11 +67,12 @@
   "skills": [
     {"name":"Python","level":90},
     {"name":"SQL","level":85},
-    {"name":"R","level":80},
+    {"name":"R","level":85},
     {"name":"Excel","level":95},
-    {"name":"Data Visualization","level":88}
+    {"name":"Data Visualization","level":95}
   ]
 }
+
 
 
 
