@@ -17,21 +17,42 @@
       "year": "2024",
       "logo": "jnu.png",
       "subjects": ["Probability & Statistics","Regression Analysis","Econometrics","Sampling Techniques","Multivariate Analysis","Time Seirse Analysis","Biostatistics"]
+    },
+     {
+      "institution": "Jagannath University",
+      "degree": "MSc in Statistics",
+      "gpa": "3.80 / 4.00",
+      "year": "2025",
+      "logo": "jnu.png",
+      "subjects": ["Advance Multivariate Analysis","Advanced Sampling Techniques","Data Mining","Advanced Sample Design","Thesis"]
+    },
+     {
+      "institution": "Hajigonj Degree College",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "gpa": "4.50 / 5.00",
+      "year": "2018",
+      "logo": "jnu.png"
+    },
+    {
+      "institution": "Nizmehar Model Pilot High School",
+      "degree": "Secondary School Certificate (SSC)",
+      "gpa": "4.80 / 5.00",
+      "year": "2016",
+      "logo": "jnu.png"
     }
   ],
   "courses": [
     {
-      "title": "Google Data Analytics Certificate",
+      "title": "Data Analysis in Excel",
       "institution": "Coursera",
       "year": "2023",
-      "desc": "A comprehensive program covering data cleaning, visualization, and analysis using SQL and spreadsheets.",
-      "cert": "cert_google.png"
+      "desc": "A comprehensive program covering data cleaning, visualization, and analysis using Excel and spreadsheets.Including hypothesis testing, time series analysis and  regression analysis in Excel and SPSS.",
     },
     {
-      "title": "SQL for Data Science",
-      "institution": "Udemy",
-      "year": "2024",
-      "desc": "Learn SQL queries, joins, aggregations, and data extraction for analytics."
+      "title": "Data Analytics with Excel,Power BI, SQL and Python",
+      "institution": "Data solution 360",
+      "year": "2025",
+      "desc": "Learn SQL queries, joins, aggregations, and data extraction for analytics.Excel: Power Query, Power Pivot, and Power BI for data modeling and visualization.Python: Data manipulation with Pandas and data visualization with Matplotlib and Seaborn.SQL: Database management and querying for data analytics."
     }
   ],
   "projects": [
@@ -51,4 +72,3 @@
     {"name":"Data Visualization","level":88}
   ]
 }
-
