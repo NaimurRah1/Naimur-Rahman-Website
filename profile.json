@@ -1,33 +1,74 @@
 {
-  "name": "NAIMUR RAHMAN",
-  "bio": "Statistics graduate & data enthusiast.",
-  "profilePhoto": "NaimurRahman.png",
+  "name": "Naimur Rahman",
+  "bio": "Statistics graduate and data enthusiast passionate about research, analytics, and transforming data into actionable insights.",
 
-  "skills": [
-    {"name":"Python","level":90},
-    {"name":"SQL","level":85},
-    {"name":"R","level":80}
-  ],
+  "profilePhoto": "https://github.com/NaimurRah1/Naimur-Rahman.github.oi/blob/main/NaimurRahman.png",
 
-  "projects": [
+  "socials": [
     {
-      "title": "Breastfeeding Study",
-      "desc": "Child nutrition research",
-      "category": "Research",
-      "image": "project.jpg"
+      "name": "Facebook",
+      "icon": "fab fa-facebook",
+      "link": "https://facebook.com/naimurrahman.mehrab"
+    },
+    {
+      "name": "YouTube",
+      "icon": "fab fa-youtube",
+      "link": "https://youtube.com"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin",
+      "link": "https://linkedin.com/in/naimurrahman33"
+    },
+    {
+      "name": "GitHub",
+      "icon": "fab fa-github",
+      "link": "https://github.com/NaimurRah1"
+    },
+    {
+      "name": "Instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://instagram.com/naimurrahman853"
     }
   ],
 
   "education": [
     {
-      "degree": "BSc in Statistics",
       "institution": "Jagannath University",
+      "degree": "BSc in Statistics",
+      "gpa": "3.79 / 4.00",
+      "year": "2024",
+      "logo": "jnu.png",
+      "subjects": [
+        "Probability & Statistics",
+        "Regression Analysis",
+        "Econometrics",
+        "Sampling Techniques",
+        "Multivariate Analysis",
+        "Time Seirse Analysis",
+        "Biostatistics"
+      ]
+    }
+  ],
+
+  "courses": [
+    {
+      "title": "Google Data Analytics Certificate",
+      "institution": "Coursera",
+      "year": "2023"
+    },
+    {
+      "title": "SQL for Data Science",
+      "institution": "Udemy",
       "year": "2024"
     }
   ],
 
-  "socials": {
-    "GitHub": "https://github.com/NaimurRah1",
-    "LinkedIn": "https://linkedin.com/in/naimur-rahman"
-  }
+  "projects": [
+    {
+      "title": "The association between breastfeeding practices and child nutrition status in Bangladesh",
+      "desc": "Research on child nutrition outcomes using BDHS data.",
+      "image": "project1.png"
+    }
+  ]
 }
