@@ -39,7 +39,7 @@
       "title": "The association between breastfeeding practices and child nutrition status in Bangladesh",
       "desc": "Research on child nutrition outcomes using BDHS data.",
       "image": "project1.png",
-      "category": "Research",
+      "category": "Research & Statistics",
       "link": "https://example.com/project1"
     }
   ],
@@ -51,3 +51,4 @@
     {"name":"Data Visualization","level":88}
   ]
 }
+
