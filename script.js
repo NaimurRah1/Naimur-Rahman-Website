@@ -7,11 +7,11 @@ fetch('profile.json')
   document.getElementById('name').textContent=d.name;
   document.getElementById('bio').textContent=d.bio;
 
-  // NAME BLINK LETTERS
+  // NAME BOUND LETTERS
   const nameEl = document.getElementById('name');
   const letters = nameEl.textContent.split('');
   nameEl.innerHTML = letters.map((l,i)=>
-    `<span class="blink-letter" style="animation-delay:${i*0.15}s">${l}</span>`
+    `<span class="bound-letter" style="animation-delay:${i*0.1}s">${l}</span>`
   ).join('');
 
   // SOCIAL ICONS
@@ -52,10 +52,11 @@ fetch('profile.json')
         <p>${c.institution}</p>
         <small>${c.year}</small>
         ${c.desc ? `<p>${c.desc}</p>` : ''}
+        ${c.cert ? `<img src="${c.cert}" alt="Certificate">` : ''}
       </div>`;
   });
 
-  // PROJECT FILTERS
+  // PROJECTS
   const pr=document.getElementById('projectsGrid');
   d.projects.forEach(p=>{
     pr.innerHTML+=`
@@ -65,6 +66,20 @@ fetch('profile.json')
         <p>${p.desc}</p>
       </div>`;
   });
+
+  // SKILLS
+  if(d.skills){
+    const skillsDiv = document.getElementById('skillsList');
+    d.skills.forEach(s=>{
+      skillsDiv.innerHTML+=`
+        <div class="skill-card">
+          <p>${s.name}</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width:${s.level}%"></div>
+          </div>
+        </div>`;
+    });
+  }
 
 });
 
