@@ -11,22 +11,25 @@
 
 <body>
 
+<!-- BACKGROUND CUBES -->
+<div class="cube-bg"></div>
+
+<!-- SECTION POPUP -->
+<div class="section-popup" id="sectionPopup"></div>
+
 <nav>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#education">Education</a>
   <a href="#courses">Courses</a>
   <a href="#projects">Projects</a>
-  <button id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+  <button id="themeToggle">🌙</button>
 </nav>
-
-<!-- Section Popup -->
-<div id="sectionPopup" class="section-popup"></div>
 
 <!-- HERO -->
 <section class="hero" id="about">
   <div class="hero-card">
-    <img id="photo" alt="Profile Photo">
+    <img id="photo">
     <h1 id="name"></h1>
     <p id="bio"></p>
 
@@ -46,7 +49,7 @@
   <div id="educationList"></div>
 </section>
 
-<!-- COURSES & CERTIFICATIONS -->
+<!-- COURSES -->
 <section class="section" id="courses">
   <h2>Courses & Certifications</h2>
   <div id="courseList"></div>
@@ -55,7 +58,8 @@
 <!-- PROJECTS -->
 <section class="section" id="projects">
   <h2>Projects</h2>
-  <div id="projectFilters" style="margin-bottom:20px;text-align:center;">
+
+  <div id="projectFilters">
     <button data-cat="All">All</button>
     <button data-cat="Research & Statistics">Research & Statistics</button>
     <button data-cat="Excel">Excel</button>
@@ -63,6 +67,7 @@
     <button data-cat="Python">Python</button>
     <button data-cat="Power BI">Power BI</button>
   </div>
+
   <div class="projects-grid" id="projectsGrid"></div>
 </section>
 
