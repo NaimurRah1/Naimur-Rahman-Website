@@ -4,15 +4,14 @@ fetch('profile.json')
 
   // BASIC INFO
   document.getElementById('photo').src=d.profilePhoto;
-  document.getElementById('name').textContent=d.name;
   document.getElementById('bio').textContent=d.bio;
 
-  // NAME BOUND LETTERS
+  // NAME BOUNCE ONE BY ONE
   const nameEl = document.getElementById('name');
-  const letters = nameEl.textContent.split('');
-  nameEl.innerHTML = letters.map((l,i)=>
-    `<span class="bound-letter" style="animation-delay:${i*0.1}s">${l}</span>`
-  ).join('');
+  const letters = d.name.split('');
+  nameEl.innerHTML = letters.map(l => `<span class="bound-letter">${l}</span>`).join('');
+  const spans = nameEl.querySelectorAll('.bound-letter');
+  spans.forEach((s,i)=> s.style.animationDelay = `${i*0.2}s`);
 
   // SOCIAL ICONS
   const socials=document.getElementById('socials');
@@ -21,6 +20,20 @@ fetch('profile.json')
       <a href="${s.link}" target="_blank" title="${s.name}">
         <i class="${s.icon}"></i>
       </a>`;
+  }
+
+  // SKILLS
+  if(d.skills){
+    const skillsDiv = document.getElementById('skillsList');
+    d.skills.forEach(s=>{
+      skillsDiv.innerHTML+=`
+        <div class="skill-card">
+          <p>${s.name}</p>
+          <div class="skill-bar">
+            <div class="skill-level" style="width:${s.level}%"></div>
+          </div>
+        </div>`;
+    });
   }
 
   // EDUCATION
@@ -66,20 +79,6 @@ fetch('profile.json')
         <p>${p.desc}</p>
       </div>`;
   });
-
-  // SKILLS
-  if(d.skills){
-    const skillsDiv = document.getElementById('skillsList');
-    d.skills.forEach(s=>{
-      skillsDiv.innerHTML+=`
-        <div class="skill-card">
-          <p>${s.name}</p>
-          <div class="skill-bar">
-            <div class="skill-level" style="width:${s.level}%"></div>
-          </div>
-        </div>`;
-    });
-  }
 
 });
 
