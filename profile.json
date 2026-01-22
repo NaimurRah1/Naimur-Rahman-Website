@@ -24,7 +24,8 @@
       "title": "Google Data Analytics Certificate",
       "institution": "Coursera",
       "year": "2023",
-      "desc": "A comprehensive program covering data cleaning, visualization, and analysis using SQL and spreadsheets."
+      "desc": "A comprehensive program covering data cleaning, visualization, and analysis using SQL and spreadsheets.",
+      "cert": "cert_google.png"
     },
     {
       "title": "SQL for Data Science",
@@ -41,5 +42,12 @@
       "category": "Research",
       "link": "https://example.com/project1"
     }
+  ],
+  "skills": [
+    {"name":"Python","level":90},
+    {"name":"SQL","level":85},
+    {"name":"R","level":80},
+    {"name":"Excel","level":95},
+    {"name":"Data Visualization","level":88}
   ]
 }
