@@ -73,12 +73,15 @@
   ],
   "skills": [
     {"name":"Python","level":90},
-    {"name":"SQL","level":85},
-    {"name":"R","level":85},
+    {"name":"SQL","level":90},
+    {"name":"R","level":90},
     {"name":"Excel","level":95},
-    {"name":"Data Visualization","level":95}
+    {"name":"SPSS","level":98}
+    {"name":"Data Visualization","level":95},
+    {"name":"MetaBase","level":75}
   ]
 }
+
 
 
 
