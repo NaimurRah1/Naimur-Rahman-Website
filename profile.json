@@ -1,7 +1,7 @@
 {
   "name": "Naimur Rahman",
   "bio": "Statistics graduate and data enthusiast passionate about research, analytics, and transforming data into actionable insights.",
-  "profilePhoto": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman.github.oi/main/NaimurRahman.png",
+  "profilePhoto": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman-Website/main/myphoto.png",
   "socials": [
     {"name": "Facebook", "icon": "fab fa-facebook", "link": "https://facebook.com/naimurrahman.mehrab"},
     {"name": "YouTube", "icon": "fab fa-youtube", "link": "https://youtube.com"},
@@ -79,6 +79,7 @@
     {"name":"Data Visualization","level":95}
   ]
 }
+
 
 
 
