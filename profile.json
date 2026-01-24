@@ -56,13 +56,13 @@
     }
   ],
   "projects": [
-    {
-      "title": "The association between breastfeeding practices and child nutrition status in Bangladesh",
-      "desc": "Research on child nutrition outcomes using BDHS data.",
-      "image": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman-Website/main/Association%20Between%20brestfeeding%20paractices%20and%20child%20.pn",
-      "category": "Research & Statistics",
-      "link": "https://example.com/project1"
-    },
+   {
+  "title": "The association between breastfeeding practices and child nutrition status in Bangladesh",
+  "desc": "This study examines the impact of breastfeeding practices on child nutrition in Bangladesh. It analyzes exclusive breastfeeding, early initiation, and prelacteal feeding. Maternal, household, and regional factors are considered. The research highlights key determinants of malnutrition among children aged 0–23 months.",
+  "image": "https://raw.githubusercontent.com/NaimurRah1/Association-between-breastfeedin-practice-and-child-nutrition-status-in-Bangladesh/main/association%20between%20bf%20and%20cn.png",
+  "category": "Research & Statistics",
+  "link": "https://github.com/NaimurRah1/Association-between-breastfeedin-practice-and-child-nutrition-status-in-Bangladesh"
+   },
    {
   "title": "UrbanCart-Sales-Analytics-SQL-Based-Business-Insights",
   "desc": "A data-driven analysis of UrbanCart’s sales and customer behavior using SQL. The project identifies top-performing products, high-revenue product pairs, stock-out risks, customer retention trends, basket sizes, and payment method patterns. Key SQL functions used include SUM, AVG, COUNT, DATE_TRUNC, EXTRACT, CASE WHEN, RANK, ROW_NUMBER, INNER JOIN, LEFT JOIN, and CTEs. Actionable recommendations were derived to optimize inventory, promotions, cross-selling, and loyalty strategies, helping improve revenue and customer experience.",
@@ -79,6 +79,7 @@
     {"name":"Data Visualization","level":95}
   ]
 }
+
 
 
 
