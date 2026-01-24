@@ -69,7 +69,15 @@
   "image": "https://raw.githubusercontent.com/NaimurRah1/UrbanCart-Sales-Analytics-SQL-Based-Business-Insights/main/image/page1.png",
   "category": "SQL",
   "link": "https://github.com/NaimurRah1/UrbanCart-Sales-Analytics-SQL-Based-Business-Insights.git"
-   }
+   },
+    {
+  "title": "Dynamic Sales Dashboard-Excel Base Business Insights",
+  "desc": "An interactive Excel dashboard built to analyze sales and transaction performance for a coffee and food business. The dashboard provides key KPIs such as total transactions, quantity sold, revenue, and profit, along with insights into product categories, weekly and monthly sales trends, year-over-year revenue comparison, city-wise performance, and revenue vs profit analysis. Dynamic slicers for Year, Month, and City enable real-time filtering and business-focused decision-making.",
+  "image": "https://raw.githubusercontent.com/NaimurRah1/Dynamic-Sales-Dashboard-for-NextPoint-Trading-Co./main/NextPoint%20Sales%20analysis.png",
+  "category": "Excel",
+  "link": "https://github.com/NaimurRah1/Dynamic-Sales-Dashboard-for-NextPoint-Trading-Co."
+}
+
   ],
   "skills": [
     {"name":"Python","level":90},
@@ -81,6 +89,7 @@
     {"name":"MetaBase","level":75}
   ]
 }
+
 
 
 
