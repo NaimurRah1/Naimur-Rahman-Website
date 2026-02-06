@@ -76,8 +76,14 @@
   "image": "https://raw.githubusercontent.com/NaimurRah1/Dynamic-Sales-Dashboard-for-NextPoint-Trading-Co./main/NextPoint%20Sales%20analysis.png",
   "category": "Excel",
   "link": "https://github.com/NaimurRah1/Dynamic-Sales-Dashboard-for-NextPoint-Trading-Co."
-}
-
+},
+    {
+    "title": "RFM Segmentation - SQL Based Analysis",
+    "desc": "This project performs RFM Segmentation (Recency, Frequency, Monetary) using SQL to classify customers into meaningful segments. It helps businesses improve customer engagement, retention, and targeted marketing strategies.",
+    "image": "https://raw.githubusercontent.com/NaimurRah1/RFM-segmentation-SQL-Based-project/main/image/rfm1.jpeg",
+    "category": "SQL",
+    "link": "https://github.com/NaimurRah1/RFM-segmentation-SQL-Based-project.git"
+  }
   ],
   "skills": [
     {"name":"Python","level":90},
@@ -89,6 +95,7 @@
     {"name":"MetaBase","level":75}
   ]
 }
+
 
 
 
