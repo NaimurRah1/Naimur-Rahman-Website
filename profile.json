@@ -83,7 +83,14 @@
     "image": "https://raw.githubusercontent.com/NaimurRah1/RFM-segmentation-SQL-Based-project/main/image/rfm1.jpeg",
     "category": "SQL",
     "link": "https://github.com/NaimurRah1/RFM-segmentation-SQL-Based-project.git"
-  }
+  },
+{
+    "title": "Cohort Analysis - SQL Based Business Analysis",
+    "desc": "This project performs Cohort Analysis to track customer retention over 5 months. Using Python for data upload to PostgreSQL and SQL for cohort queries, it identifies loyal customers and provides insights to improve retention and drive long-term revenue.",
+    "image": "https://raw.githubusercontent.com/NaimurRah1/Cohort-Analysis--SQL-based-business-analysis/main/coho/cohort1.jpeg",
+    "category": "SQL",
+    "link": "https://github.com/NaimurRah1/Cohort-Analysis--SQL-based-business-analysis.git"
+}
   ],
   "skills": [
     {"name":"Python","level":90},
